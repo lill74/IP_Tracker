@@ -4,6 +4,12 @@ import json
 
 
 def main():
+    """Print about IP Address's Information
+
+        Shell Arguments:
+            -i or --ipaddress -- IP Address that you want to track.
+    """
+
     parser = argparse.ArgumentParser()
     parser.add_argument("-i", "--ipaddress", help="IP Address To Track")
     args = parser.parse_args()
